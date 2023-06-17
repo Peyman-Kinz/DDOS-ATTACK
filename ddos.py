@@ -41,7 +41,7 @@ ip = input("IP Target : ")
 port = eval(input("Port       : "))
 
 # Lets start the attack
-print("Thank you for using the KARTHIK-LAL (DDOS-ATTACK-TOOL).")
+print("Thank you for using the Peyman Kinz (DDOS-ATTACK-TOOL).")
 print("Starting the attack on ", ip, " at port ", port, "...")
 
 time.sleep(5)
