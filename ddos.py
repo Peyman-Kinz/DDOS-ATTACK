@@ -8,25 +8,21 @@ import random
 
 
 def display_banner():
-    banner =  "██████╗ ██████╗  ██████╗ ███████╗      
-    banner += "██╔══██╗██╔══██╗██╔═══██╗██╔════╝
-    banner += "██║  ██║██║  ██║██║   ██║███████╗
-    banner += "██║  ██║██║  ██║██║   ██║╚════██║
-    banner += "██████╔╝██████╔╝╚██████╔╝███████║
-    banner += "╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝
+    banner =  "██████╗ ██████╗  ██████╗ ███████╗       █████╗ ████████╗████████╗ █████╗  ██████╗██╗  ██╗\n"
+    banner += "██╔══██╗██╔══██╗██╔═══██╗██╔════╝      ██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝\n"
+    banner += "██║  ██║██║  ██║██║   ██║███████╗█████╗███████║   ██║      ██║   ███████║██║     █████╔╝\n"
+    banner += "██║  ██║██║  ██║██║   ██║╚════██║╚════╝██╔══██║   ██║      ██║   ██╔══██║██║     ██╔═██╗\n"
+    banner += "██████╔╝██████╔╝╚██████╔╝███████║      ██║  ██║   ██║      ██║   ██║  ██║╚██████╗██║  ██╗\n"
+    banner += "╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝      ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝\n"
     print(banner)
 
 
 display_banner()
 
 # Terminal header settings and information
-os.system('color a')
+os.system('color 0A')
 print("Developer  :   Peyman Kinz")
 print("Created Date:   2023-16-6")
-print('Project     :   DDOS-Attack')
-print('Purpose     :   A simple DDOS-Attack tool to test your network security')
-print('Caution     :   This tool is only for educational purpose. Do not use this for illegal purposes.')
-print()
 
 # Date and Time Declaration and Initialization
 mydate = time.strftime('%Y-%m-%d')
@@ -53,7 +49,7 @@ while True:
     print("Sent %s packet to %s throught port:%s" % (sent, ip, port))
     if port == 65534:
         port = 1
-
+        
 # End of the script
 os.system("cls")
 input("Press Enter to exit...")
